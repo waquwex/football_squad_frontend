@@ -1,0 +1,20 @@
+.Form {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.FormValidation {
+    color: red;
+    padding: 8px;
+}
+
+.DeleteAccount {
+    background-color: red;
+    margin: 16px 8px;
+}
+
+.DeleteAccount:hover {
+    background-color: red;
+    color: white;
+}

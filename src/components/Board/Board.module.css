@@ -1,0 +1,29 @@
+.Board {
+    display: flex;
+    box-sizing: content-box;
+    background-image: url(../../images/football_pitch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    min-width: 200px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 8px;
+    flex: 1;
+    cursor: default;
+    flex-direction: column;
+    touch-action: none;
+    margin: 0;
+}
+
+.TeamName {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 2px;
+    padding: 2px;
+    width: calc(100% - 4px);
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 1;
+}

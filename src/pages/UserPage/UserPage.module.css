@@ -1,0 +1,46 @@
+.AccountSettings {
+    display: inline-block;
+    margin: 1em 0.5em;
+}
+
+.SquadName {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    color: rgb(123, 60, 206);
+}
+
+.SquadCreatedDate {
+    display: inline-block;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.ListSquad {
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    padding: 6px;
+}
+
+.ListSquad > a:visited {
+    color: rgb(123, 60, 206);
+}
+
+.PageNumbers {
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px 6px;
+}
+
+.PageNumbers > option {
+    border-radius: 0;
+}
+
+.TotalPages {
+    margin-left: 8px;
+}

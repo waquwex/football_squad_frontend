@@ -1,0 +1,30 @@
+.RootLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  touch-action: pan-y;
+}
+
+.RootLayoutBody {
+  min-width: 600px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.RootLayoutFooter {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+  color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .RootLayoutBody  {
+    min-width: 400px;
+  }
+}

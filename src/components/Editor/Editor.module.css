@@ -1,0 +1,129 @@
+.Editor {
+    margin-left: 4px;
+    flex: 0;
+    background-color: green;
+    min-width: 300px;
+    min-height: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.FormField {
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px dotted rgb(0, 68, 0);
+}
+
+.FormField > label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.Editor > .formField:first-child {
+    border-bottom: 2px solid rgb(0, 68, 0);
+}
+
+.Editor > .FootballerNameSuggestions {
+    list-style: none;
+    overflow-y: scroll;
+}
+
+.Editor > .FootballerNameSuggestions > li {
+    background-color: rgb(70, 179, 70);
+    margin: 3px;
+    font-weight: 450;
+}
+
+.Editor > .FootballerNameSuggestions > li > button {
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    align-items: center;
+    border: 2px solid transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.Editor >.FootballerNameSuggestions > li > button:hover {
+    border: 2px solid black;
+}
+
+.Editor >.FootballerNameSuggestions > li > button:active {
+    background-color: greenyellow;
+    border: 2px solid black;
+}
+
+.Name {
+    flex: 1;
+    text-align: left;
+}
+
+.Flag {
+    height: 1em;
+    width: 1.55em;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: left;
+}
+
+.Flag > img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.DateOfBirth {
+    background-color: rgb(0, 66, 3);
+    color: white;
+    width: 3em;
+}
+
+.AssignedName {
+    font-weight: bold;
+    color: red;
+}
+
+.ClosePlace > button {
+    transform: translate(-4px, -4px);
+    display: inline-block;
+    padding: 2px 12px;
+    background-color: red;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 12px 0 12px 0;
+    outline: none;
+}
+
+.ClosePlace > button:hover {
+    box-shadow: 0 0 2px black;
+}
+
+.ClosePlace > button:active {
+    box-shadow: 0 0 5px black;
+}
+
+.LoadingIcon {
+    height: 1em;
+    animation: LoadingIconKeyframes 1.5s normal linear infinite;
+}
+
+@keyframes LoadingIconKeyframes {
+    from {
+        transform:  rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.NoFootballersAreSelected {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}

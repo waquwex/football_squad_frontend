@@ -1,0 +1,9 @@
+.Actions {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 2px auto;
+}
+
+.Button {
+    margin: 0 8px;
+}

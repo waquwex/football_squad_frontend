@@ -1,0 +1,4 @@
+.EmptyPosition {
+    position: absolute;
+    border: 2px dotted black;
+}

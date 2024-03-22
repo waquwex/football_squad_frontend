@@ -1,0 +1,89 @@
+.PlayerMagnet {
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 4px;
+    text-align: center;
+    flex-direction: column;
+    overflow: visible;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: grab;
+    z-index: 1; /* To prevent Chrome captures background when dragging */
+}
+
+.PlayerName {
+    white-space: nowrap;
+    word-break: break-all;
+    background-color: #888888dd;
+    font-weight: bold;
+    padding: 1px 4px;
+    border-radius: 8px;
+    position: relative;
+    top: 1.4em;
+    max-width: 5.8em;
+    border: 1px solid #111111cc;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.PlayerPosition {
+    align-items: center;
+    justify-content: center;
+    background-color: #111111cc;
+    color: white;
+    padding: 1px 4px;
+    line-height: 1.5em;
+    border-radius: 5px;
+    left: 2.95em;
+    top: -0.3em;
+    position: relative;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.ShirtNumber {
+    color: white;
+    background-color: #000000cc;
+    border-radius: 50%;
+    line-height: 1.7em;
+    min-height: 1.7em;
+    min-width: 1.7em;
+    position: relative;
+    left: 2.95em;
+    font-weight: bold;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.Selected {
+    border: 2px solid red;
+}
+
+.Dragging {
+    border: 2px solid orange;
+    cursor: grab !important;
+    z-index: 5;
+}
